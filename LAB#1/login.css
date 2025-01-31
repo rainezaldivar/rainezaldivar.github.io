@@ -27,6 +27,7 @@ header {
     justify-content: space-between;
     padding: 0 100px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .logopic img {
