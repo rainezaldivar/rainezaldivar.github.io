@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Day Buttons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="button-container">
+            <button class="day-button" data-color="#eea56c">Monday</button>
+            <button class="day-button" data-color="#e76c3a">Tuesday</button>
+            <button class="day-button" data-color="#d63a21">Wednesday</button>
+            <button class="day-button" data-color="#f4665a">Thursday</button>
+            <button class="day-button" data-color="#78272d">Friday</button>
+            <button class="day-button" data-color="#9e5f3e">Saturday</button>
+            <button class="day-button" data-color="#543145">Sunday</button>
+        </div>
+
+        <div class="box-container"></div>
+    </div>
+
+    <script>
+        let currentBox = null;
+        document.querySelectorAll('.day-button').forEach(button => {
+            button.addEventListener('click', function() {
+                let boxContainer = document.querySelector('.box-container');
+                let newBox = document.createElement('div');
+                newBox.classList.add('animated-box');
+                newBox.style.backgroundColor = this.getAttribute('data-color');
+                newBox.style.transform = 'translateY(-100%)'; // Start from above
+                
+                boxContainer.appendChild(newBox);
+                
+                if (currentBox) {
+                    currentBox.style.transform = 'translateY(-100%)';
+                    currentBox.style.opacity = '0';
+                }
+                
+                setTimeout(() => {
+                    newBox.style.transform = 'translateY(0)';
+                    newBox.style.opacity = '1';
+                }, 10);
+                
+                currentBox = newBox;
+            });
+        });
+    </script>
+</body>
+</html>
