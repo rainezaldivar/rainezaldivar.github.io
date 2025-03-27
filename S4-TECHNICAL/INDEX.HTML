@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4 text-center">
+    <div class="d-flex justify-content-between">
+      <h1 class="mb-4">Shoyu Sensation</h1>
+      <button id="main-menu-button" class="btn btn-primary">Main Menu</button>
+    </div>
+
+    <div id="main-view" class="row g-4">
+      <div class="col-md-3">
+        <div class="card restaurant-card" data-target="#gyudon">
+          <img src="gyudon.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Gyudon</h5>
+            <p class="card-text">Japanese Beef Rice Bowl</p>
+          </div>
+          <div class="hover-info">
+            Thinly sliced beef and onions simmered in a sweet and savory sauce, served over a bed of steamed rice
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card restaurant-card" data-target="#omurice">
+          <img src="omurice.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Omurice</h5>
+            <p class="card-text">Japanese Omelette Rice</p>
+          </div>
+          <div class="hover-info">
+            A fluffy omelette filled with seasoned fried rice, often topped with ketchup or a rich demi-glace sauce
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card restaurant-card" data-target="#kareraisu">
+          <img src="kareraisu.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Kare Raisu</h5>
+            <p class="card-text">Japanese Curry Rice</p>
+          </div>
+          <div class="hover-info">
+            A hearty, thick curry sauce, often made with a mix of spices and a roux, poured over a bed of fluffy, Japanese short-grain rice
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card restaurant-card" data-target="#kaisendon">
+          <img src="kaisendon.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Kaisendon</h5>
+            <p class="card-text">Japanese Seafood Rice Bowl</p>
+          </div>
+          <div class="hover-info">
+            A bowl of rice topped with a variety of fresh, raw seafood, often including sashimi like tuna, salmon, and other seafood
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detail sections wrapped in a hidden container -->
+    <div id="details-view" style="display: none;">
+        <div id="gyudon" class="detail-content">
+        <h2> Gyudon</h2>
+          <p>Category: Donburi | Price: $$</p>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam est, placerat condimentum elit ut, fermentum luctus nunc. Nunc consectetur sapien ut ornare facilisis. Nunc tincidunt efficitur purus sagittis cursus. Ut dictum vestibulum eros ultrices maximus. Pellentesque et dui ornare, laoreet felis eget, aliquam felis. Vivamus congue est in rutrum varius. Aenean nec quam et lectus aliquet suscipit eget sed metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod turpis vel mi molestie, quis egestas mi ultrices. Pellentesque eu suscipit urna. Curabitur eu metus augue. Aliquam bibendum nisl eu mauris consectetur, id pretium velit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sapien. Morbi blandit mollis dictum. Vivamus et lectus quam. <br> <br>
+
+            Ut ac enim diam. Sed et pretium orci. Duis semper mi ac metus vulputate sodales. Ut condimentum magna sed velit vulputate malesuada. Nam blandit pellentesque augue at commodo. Nullam dapibus nulla non massa ornare, ut dictum elit ornare. Phasellus ut vehicula metus. Donec et nibh ultrices, lacinia ante sed, semper lectus. Proin quam libero, euismod sodales egestas volutpat, ultrices at massa. In ut ante ac lorem feugiat aliquet. Donec dapibus turpis nec congue pretium. Aliquam cursus aliquam lorem quis vestibulum. Nunc purus lectus, aliquet sit amet est posuere, venenatis pretium est. Ut faucibus eget tellus vehicula molestie. Maecenas finibus sodales hendrerit. <br> <br>
+            
+            <h2>Shoyu Sensation</h2>
+            <p>Address: 12 Tokyo Ave, Nihon City <br>
+                Open: 10AM - 9PM </p></p>
+        </div>
+      
+        <div id="omurice" class="detail-content">
+            <h2> Omurice </h2>
+            <p>Category: Donburi | Price: $$</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam est, placerat condimentum elit ut, fermentum luctus nunc. Nunc consectetur sapien ut ornare facilisis. Nunc tincidunt efficitur purus sagittis cursus. Ut dictum vestibulum eros ultrices maximus. Pellentesque et dui ornare, laoreet felis eget, aliquam felis. Vivamus congue est in rutrum varius. Aenean nec quam et lectus aliquet suscipit eget sed metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod turpis vel mi molestie, quis egestas mi ultrices. Pellentesque eu suscipit urna. Curabitur eu metus augue. Aliquam bibendum nisl eu mauris consectetur, id pretium velit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sapien. Morbi blandit mollis dictum. Vivamus et lectus quam. <br> <br>
+  
+              Ut ac enim diam. Sed et pretium orci. Duis semper mi ac metus vulputate sodales. Ut condimentum magna sed velit vulputate malesuada. Nam blandit pellentesque augue at commodo. Nullam dapibus nulla non massa ornare, ut dictum elit ornare. Phasellus ut vehicula metus. Donec et nibh ultrices, lacinia ante sed, semper lectus. Proin quam libero, euismod sodales egestas volutpat, ultrices at massa. In ut ante ac lorem feugiat aliquet. Donec dapibus turpis nec congue pretium. Aliquam cursus aliquam lorem quis vestibulum. Nunc purus lectus, aliquet sit amet est posuere, venenatis pretium est. Ut faucibus eget tellus vehicula molestie. Maecenas finibus sodales hendrerit. <br> <br>
+              
+              <h2>Shoyu Sensation</h2>
+              <p>Address: 12 Tokyo Ave, Nihon City <br>
+                  Open: 10AM - 9PM </p>
+        </div>
+      
+        <div id="kareraisu" class="detail-content">
+          <h2>Kare Raisu </h2>
+          <p>Category: Donburi | Price: $$</p>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam est, placerat condimentum elit ut, fermentum luctus nunc. Nunc consectetur sapien ut ornare facilisis. Nunc tincidunt efficitur purus sagittis cursus. Ut dictum vestibulum eros ultrices maximus. Pellentesque et dui ornare, laoreet felis eget, aliquam felis. Vivamus congue est in rutrum varius. Aenean nec quam et lectus aliquet suscipit eget sed metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod turpis vel mi molestie, quis egestas mi ultrices. Pellentesque eu suscipit urna. Curabitur eu metus augue. Aliquam bibendum nisl eu mauris consectetur, id pretium velit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sapien. Morbi blandit mollis dictum. Vivamus et lectus quam. <br> <br>
+
+            Ut ac enim diam. Sed et pretium orci. Duis semper mi ac metus vulputate sodales. Ut condimentum magna sed velit vulputate malesuada. Nam blandit pellentesque augue at commodo. Nullam dapibus nulla non massa ornare, ut dictum elit ornare. Phasellus ut vehicula metus. Donec et nibh ultrices, lacinia ante sed, semper lectus. Proin quam libero, euismod sodales egestas volutpat, ultrices at massa. In ut ante ac lorem feugiat aliquet. Donec dapibus turpis nec congue pretium. Aliquam cursus aliquam lorem quis vestibulum. Nunc purus lectus, aliquet sit amet est posuere, venenatis pretium est. Ut faucibus eget tellus vehicula molestie. Maecenas finibus sodales hendrerit. <br> <br>
+            
+            <h2>Shoyu Sensation</h2>
+            <p>Address: 12 Tokyo Ave, Nihon City <br>
+                Open: 10AM - 9PM </p>
+        </div>
+      
+        <div id="kaisendon" class="detail-content">
+            <h2>Kaisendon </h2>
+          <p>Category: Donburi | Price: $$$</p>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam est, placerat condimentum elit ut, fermentum luctus nunc. Nunc consectetur sapien ut ornare facilisis. Nunc tincidunt efficitur purus sagittis cursus. Ut dictum vestibulum eros ultrices maximus. Pellentesque et dui ornare, laoreet felis eget, aliquam felis. Vivamus congue est in rutrum varius. Aenean nec quam et lectus aliquet suscipit eget sed metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod turpis vel mi molestie, quis egestas mi ultrices. Pellentesque eu suscipit urna. Curabitur eu metus augue. Aliquam bibendum nisl eu mauris consectetur, id pretium velit facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim sapien. Morbi blandit mollis dictum. Vivamus et lectus quam. <br> <br>
+
+            Ut ac enim diam. Sed et pretium orci. Duis semper mi ac metus vulputate sodales. Ut condimentum magna sed velit vulputate malesuada. Nam blandit pellentesque augue at commodo. Nullam dapibus nulla non massa ornare, ut dictum elit ornare. Phasellus ut vehicula metus. Donec et nibh ultrices, lacinia ante sed, semper lectus. Proin quam libero, euismod sodales egestas volutpat, ultrices at massa. In ut ante ac lorem feugiat aliquet. Donec dapibus turpis nec congue pretium. Aliquam cursus aliquam lorem quis vestibulum. Nunc purus lectus, aliquet sit amet est posuere, venenatis pretium est. Ut faucibus eget tellus vehicula molestie. Maecenas finibus sodales hendrerit. <br> <br>
+            
+            <h2>Shoyu Sensation</h2>
+            <p>Address: 12 Tokyo Ave, Nihon City <br>
+                Open: 10AM - 9PM </p>
+        </div>
+      </div>
+      
+
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $("#main-menu-button").on("click", function () {
+        $("#main-view").show();
+        $("#details-view").hide();
+      });
+  
+      $(".restaurant-card").on("click", function () {
+        var target = $(this).data("target");
+        $("#main-view").hide();
+        $("#details-view").show();
+        $(".detail-content").hide(); 
+        $(target).show(); 
+      });
+    });
+  </script>
+</body>
+</html>

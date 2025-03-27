@@ -105,6 +105,8 @@ h1 {
     font-family: "Noto Sans JP", sans-serif;
     border: none;
     border-radius: 10px;
+    margin-bottom: 20px;
+    top: 20px;
     cursor: pointer;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
@@ -152,4 +154,38 @@ h1 {
     flex: 1;
     padding: 30px;
     border-radius: 0 20px 20px 0;
+}
+
+/* Styling for restaurant name in red, uppercase, and bold */
+.restaurant-name {
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #e60000; /* Matches red text in the image */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Container for restaurant details with a divider */
+.details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 3px solid white; /* Divider line */
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+/* Address on the left and category/price on the right */
+.left-column, .right-column {
+    width: 48%;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Description styling */
+.description {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
 }
