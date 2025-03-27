@@ -15,7 +15,7 @@ body {
 body::before {
     content: "";
     position: absolute;
-    top: -25px;
+    top: -26px;
     left: 0;
     width: 1520px;
     height: 697px;
